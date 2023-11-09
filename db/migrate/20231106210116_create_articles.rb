@@ -7,7 +7,6 @@ class CreateArticles < ActiveRecord::Migration[7.1]
       t.text :body
       t.references :category, null: false, foreign_key: true
 
-
       t.timestamps
     end
   end

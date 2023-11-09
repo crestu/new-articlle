@@ -3,7 +3,7 @@
 class Article < ApplicationRecord
   include Visible
 
-  belongs_to :Category
+  belongs_to :category
 
   has_many :comments, dependent: :destroy
 
