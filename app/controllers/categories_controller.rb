@@ -9,6 +9,8 @@ class CategoriesController < ApplicationController
     #   # Display category details and associated articles
     #   @articles = @category.articles
     # end
+
+    
    
     private
   
