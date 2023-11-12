@@ -1,3 +1,20 @@
+body{
+    background-color: aquamarine;
+}
+
 h1{
-    background-color: aqua;
+    color:brown;
+    text-align: center;
+} 
+
+p{
+    text-align: center;
+}
+
+ul{
+    color:blue;
+}
+
+textarea,input{
+    background-color: aquamarine;
 }
