@@ -12,3 +12,14 @@
     turbo_confirm: "Are you sure?"
   } %></li>
 </ul>
+
+<ul>
+  <% @category.articles do |category| %>
+    <% unless category.archived? %>
+      <li>
+        <%= link_to article.title, category_article_path(article.category, article)%>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+

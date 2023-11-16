@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'donations/new'
+  get 'donations/create'
   # root 'articles#index'
   # get "/articles", to: "articles#index"
   
@@ -28,6 +30,8 @@ Rails.application.routes.draw do
   # end
 
   # Rails.application.routes.draw do
+  get 'donations/new'
+  get 'donations/create'
   #   root "articles#index"
   #   resources :articles
   # end
@@ -38,4 +42,6 @@ Rails.application.routes.draw do
     end
   end
 
+
+  resources :donations, only: [:new, :create]
 end
